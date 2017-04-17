@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ </head>
+ <body>
+
+
+<div class="container-fluid">
+<!-- 	============================= NAV ============================================ -->
+
+   <nav class="navbar navbar-default navbar-fixed-top header">
+    <a class="navbar-brand header-brand text-uppercase" href="#">
+        <img src="img/logo-new.png" id="logo">
+    </a>
+    
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>     
+        </div>
+
+        <div class="collapse navbar-collapse" id="main-navbar-collapse" >
+            <ul class="nav navbar-nav navbar-right header-right" id="user_btn">
+                                
+                    <li class="dropdown header-dropdown" >
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/account.png">My account</a>
+                        <!-- <button type="button" id='dashboard-button' class="navbar-toggle" data-toggle="collapse" data-target="#sidebar" >
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                        </button> -->
+                        <ul class="dropdown-menu">
+                            <li><a href="http://newapp.scriptengage.com/super-admin/accounts">Super Admin</a></li>
+                                    <li><a href="http://newapp.scriptengage.com/account">Account</a></li>
+        					<li><a href="http://sambakkersupport.com" target="_blank">Support</a></li>
+        					<li><a href="http://newapp.scriptengage.com/logout">Logout</a></li>
+        
+    					</ul>
+					</li>
+     		</ul>
+	  </div>
+	</nav><!-- endnav -->
+</div>
+<!-- <div class="clearfix"></div> -->
+<!-- ================ SIDEBAR =============== -->
+    <div class="pull-left" id="sidebar">
+   				<div class="user_image">
+   					<img class="img-circle" src='http://newapp.scriptengage.com/assets/images/profile-pictures/profile_pic.png'>
+   					<p>Super</p>
+   				</div>
+   				<div class="user_items"><img src='http://newapp.scriptengage.com/assets/images/dashboard.png'><p>Dashboard</p></div>
+   				<div class="user_items"><img src='http://newapp.scriptengage.com/assets/images/my_avatar.png'><p>My Avatar</p></div>
+   				<div class="user_items"><img src='http://newapp.scriptengage.com/assets/images/new_avatar.png'><p>New Avatar</p></div>
+   				<div class="user_items"><img src='http://newapp.scriptengage.com/assets/images/generate_scripts.png'><p>Generate Script</p></div>
+   				<div class="user_items"><img src='http://newapp.scriptengage.com/assets/images/saved_templates.png'><p>Saved Templates</p></div>
+   				<div class="user_items"><img src='http://newapp.scriptengage.com/assets/images/vebinar.png'><p>Webinar/VSL Generator</p></div>
+   				<div class="user_items"><img src='http://newapp.scriptengage.com/assets/images/vebinar.png'><p>My Webinar/VSL</p></div>
+   	</div><!-- ENDSIDEBAR -->
+
+<!-- ============= CONTENT ===================== -->
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-xs-12 col-md-10 col-md-offset-2" id="main">
+      	<h2>VIDEO TRAINING</h2>
+      	<div class="row">
+      		<div class="blocks col-md-4" >	
+	      		<div>
+	      			<span>WALKTHROUGH DASHBOARD TUTORIAL</span>
+	      		</div>
+	      	</div>
+	      	<div class="blocks col-md-4" >     		
+	      		<div>
+	      			<span>GENERATING SCRIPTS</span>
+	      		</div>
+	      	</div>
+	      	<div class="blocks col-md-4" >	      		
+	      		<div>
+	      			<span>NEW AVATAR</span>
+	      		</div>
+	      	</div>
+      	</div>
+      	<div class="line">
+      		<a href="#" class="pull-right">See more videos</a>
+      		<hr>
+      	</div>
+      	<div class="row search">
+      		<div class="col-xs-7 col-sm-7 col-md-7">
+      			<form class="search_form">
+      				<input type="text" name="search" class="col-xs-8 col-sm-8 col-md-8" placeholder="Search...">
+      				<button class="btn btn-success col-xs-2 col-sm-2 col-md-2" style="border-radius: 0px;"><span class="glyphicon glyphicon-search"></span></button>
+      			</form>
+      		</div>
+      		<div class="col-xs-5 col-sm-5 col-md-5">
+      			<button class="col-xs-12 col-sm-12 col-md-12 add_avatar">ADD NEW AVATAR</button>
+      		</div>
+      	</div>
+      	<div class="row items_header" style="margin-top: 25px">
+      		<div class="col-md-12">
+      			<span style="color: white;font-weight: bold;">Items</span>
+      			<span class="glyphicon glyphicon-triangle-top pull-right arrow"></span>
+      		</div>
+      	</div>
+      	<div class="clearfix"></div>
+      	<div class="row bullets">
+      		<div class="col-md-12  template">
+				<div class="avatar">
+					  <div class="image">           
+		                <p class="name"><img src='http://newapp.scriptengage.com/assets/images/edit.png'><span>test</span></p>
+		                <p class="date">10/02/17 - 5:32 PM</p>
+
+					   </div>
+					    <i class="glyphicon glyphicon-cog pull-right settings"></i>
+      			</div>
+
+    		</div>
+    	</div>
+    	<div class="row bullets">
+      		<div class="col-md-12  template">
+				<div class="avatar">
+					  <div class="image">           
+		                <p class="name"><img src='http://newapp.scriptengage.com/assets/images/edit.png'><span>test</span> </p>
+		                <p class="date">10/02/17 - 5:32 PM</p>
+
+					   </div>
+					    <i class="glyphicon glyphicon-cog pull-right settings"></i>
+      			</div>
+
+    		</div>
+    	</div>
+    	<div class="row bullets">
+      		<div class="col-md-12  template">
+				<div class="avatar">
+					  <div class="image">           
+		                <p class="name"><img src='http://newapp.scriptengage.com/assets/images/edit.png'><span>test</span> </p>
+		                <p class="date">10/02/17 - 5:32 PM</p>
+
+					   </div>
+					    <i class="glyphicon glyphicon-cog pull-right settings"></i>
+      			</div>
+
+    		</div>
+    	</div>
+    	<div class="row bullets">
+      		<div class="col-md-12  template">
+				<div class="avatar">
+					  <div class="image">           
+		                <p class="name"><img src='http://newapp.scriptengage.com/assets/images/edit.png'><span>test</span> </p>
+		                <p class="date">10/02/17 - 5:32 PM</p>
+
+					   </div>
+					    <i class="glyphicon glyphicon-cog pull-right settings"></i>
+      			</div>
+
+    		</div>
+    	</div>
+    	<div class="row bullets">
+      		<div class="col-md-12  template">
+				<div class="avatar">
+					  <div class="image">           
+		                <p class="name"><img src='http://newapp.scriptengage.com/assets/images/edit.png'><span>test</span> </p>
+		                <p class="date">10/02/17 - 5:32 PM</p>
+
+					   </div>
+					    <i class="glyphicon glyphicon-cog pull-right settings"></i>
+      			</div>
+
+    		</div>
+    	</div>
+
+
+ </div>
+</div><!-- ENDCONTAINER -->
+<!-- ============== FOOTER ================= -->
+  <footer class="navbar-fixed-bottom col-sm-12">
+  <div class="container">   
+   <div class="row">
+
+   		 <div class="col-xs-6 col-sm-6 col-md-6  col-xs-offset-0" style="color:black">Script Engage | All rights reserved Copyright © 2017 </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 text-left">
+        <ul class="list-inline col-md-12">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Disclaimer Contact</a></li>
+        </ul>
+    </div> 
+
+   </div>
+   </div>     
+</footer><!-- ENDFOOTER  --> 
+
+
+  </body>
+</html>
