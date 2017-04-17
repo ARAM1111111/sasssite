@@ -8,7 +8,6 @@ body {
 
 /* Set black background color, white text and some padding */
 footer {
-  background-color: #555;
   color: white;
   padding: 15px; }
 
@@ -47,9 +46,11 @@ footer {
   padding: 0px;
   width: 190px;
   margin-top: 76px;
-  height: 92%;
+  height: -webkit-calc(100vh - 76px);
+  height: -moz-calc(100vh - 76px);
+  height: calc(100vh - 76px);
   color: black;
-  overflow: scroll;
+  overflow-y: auto;
   position: fixed;
   z-index: 1; }
 
@@ -80,6 +81,7 @@ footer {
   margin-top: 76px;
   float: left;
   padding-left: 30px;
+  padding-right: 25px;
   z-index: 1000; }
   #main h2 {
     font-size: 18px;
@@ -182,6 +184,13 @@ footer {
         text-decoration: underline;
         color: blue; }
 
+.footer {
+  width: 81.7% !important; }
+
+.navbar-fixed-bottom {
+  left: 15px !important;
+  background-color: #F8F8F8; }
+
 /*========== MEDIA ================*/
 @media only screen and (max-width: 768px) {
   #logo {
@@ -200,4 +209,7 @@ footer {
 
 @media only screen and (max-width: 992px) {
   #sidebar {
-    display: none; } }
+    display: none; }
+  .footer {
+    width: 100% !important;
+    font-size: 10px; } }

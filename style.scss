@@ -6,6 +6,11 @@ $p_font_size:14px;
 @mixin border($px,$blue) {
     border: $px solid $blue;
 }
+@mixin height($a,$b){
+    height: -webkit-calc(#{$a} - #{$b});
+    height: -moz-calc(#{$a} - #{$b});
+    height: calc(#{$a} - #{$b});
+}
 // ========= TEMPLATE ===================
     /* Set gray background color and 100% height */
     body{
@@ -19,7 +24,6 @@ $p_font_size:14px;
     
     /* Set black background color, white text and some padding */
     footer {
-      background-color: #555;
       color: white;
       padding: 15px;
     }
@@ -46,7 +50,7 @@ $p_font_size:14px;
 
 #user_btn{
 	position: relative;
-	left: -30px;
+	left: -30px; 
 	font-size: 24px;
 	padding-top: 15px;
 	
@@ -66,9 +70,9 @@ $p_font_size:14px;
 	padding: 0px;
 	width: 190px;
 	margin-top: 76px;
-	height: 92%; 
+	@include height(100vh,76px);
 	color:black;
-	overflow: scroll;
+	overflow-y: auto;
 	position: fixed;
 	z-index: 1;
 
@@ -108,6 +112,7 @@ $p_font_size:14px;
 	// background-color: #FAFAFA;
 	float: left;
 	padding-left:30px;
+	padding-right:25px;
 	z-index: 1000;
 	h2{
 		
@@ -236,7 +241,13 @@ footer{
 		}
 	}
 }
-
+.footer{
+	width:81.7% !important;
+}
+.navbar-fixed-bottom{
+	left:15px !important;
+	background-color: $footer_bg;
+}
 /*========== MEDIA ================*/
 @media only screen and (max-width : 768px) {
    #logo{ top: -15px;}
@@ -248,8 +259,8 @@ footer{
 }
 
 @media only screen and (max-width : 992px) {
-   // footer{margin-left: 0px;}
-   #sidebar{display: none}
+   #sidebar{display: none;}
+   .footer{width:100% !important;font-size:10px;}
 }
 
 
