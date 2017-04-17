@@ -169,27 +169,26 @@ button.add_avatar {
     top: -7px; }
 
 /*========= FOOTER ===========*/
-footer {
-  background-color: #F8F8F8; }
-  footer:first-child {
-    color: black !important;
-    font-weight: bold;
-    font-size: 14px; }
-  footer > ul {
-    text-align: left; }
-    footer > ul li > a {
-      color: black;
-      text-decoration: none; }
-      footer > ul li > a:hover {
-        text-decoration: underline;
-        color: blue; }
-
-.footer {
+footer .footer {
   width: 81.7% !important; }
 
-.navbar-fixed-bottom {
+footer .navbar-fixed-bottom {
   left: 15px !important;
   background-color: #F8F8F8; }
+
+footer:first-child {
+  color: black !important;
+  font-weight: bold;
+  font-size: 14px; }
+
+footer > ul {
+  text-align: left; }
+  footer > ul li > a {
+    color: black;
+    text-decoration: none; }
+    footer > ul li > a:hover {
+      text-decoration: underline;
+      color: blue; }
 
 /*========== MEDIA ================*/
 @media only screen and (max-width: 768px) {

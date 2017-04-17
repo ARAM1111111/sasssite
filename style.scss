@@ -109,7 +109,6 @@ $p_font_size:14px;
 /*========== MAIN ==============*/
 #main{
 	margin-top: 76px;
-	// background-color: #FAFAFA;
 	float: left;
 	padding-left:30px;
 	padding-right:25px;
@@ -170,7 +169,7 @@ $p_font_size:14px;
 button.add_avatar{
 	background-color: $blue;
     color: white;
-    height: 40px;
+    height: 40px; 
     @include border(3px,$blue);
     border-bottom: 3px solid #2161AA;
     font-weight: bold;
@@ -221,8 +220,13 @@ button.add_avatar{
 
 /*========= FOOTER ===========*/
 footer{
-	// margin-left: 210px;
-	background-color: $footer_bg;
+	.footer{
+		width:81.7% !important;
+	}
+	.navbar-fixed-bottom{
+		left:15px !important;
+		background-color: $footer_bg;
+	}
 	&:first-child{
 		color: black !important;
 		font-weight: bold;
@@ -241,13 +245,7 @@ footer{
 		}
 	}
 }
-.footer{
-	width:81.7% !important;
-}
-.navbar-fixed-bottom{
-	left:15px !important;
-	background-color: $footer_bg;
-}
+
 /*========== MEDIA ================*/
 @media only screen and (max-width : 768px) {
    #logo{ top: -15px;}
