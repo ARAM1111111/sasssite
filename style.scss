@@ -1,13 +1,19 @@
-$color : #2979D4;
-
-@mixin border($px,$color) {
-    border: $px solid $color;
+@import "colors";
+$font_body:Geneva, Arial, Helvetica, sans-serif;
+$icons_font_size : 24px;
+$h2_font_size:18px;
+$p_font_size:14px;
+@mixin border($px,$blue) {
+    border: $px solid $blue;
 }
 // ========= TEMPLATE ===================
     /* Set gray background color and 100% height */
-    body{min-width:320px;}
+    body{
+    	min-width:320px;
+    	font-family:$font_body;
+    }
     .sidenav {
-      background-color: #f1f1f1;
+      // background-color: #f1f1f1;
       height: 100%;
     }
     
@@ -35,7 +41,7 @@ $color : #2979D4;
 }
 
 #main-navbar-collapse{
-	background-color: #122E46;
+	background-color: $dark_blue;
 }
 
 #user_btn{
@@ -56,11 +62,12 @@ $color : #2979D4;
 }
 
 #sidebar{
-	background-color: #D7D7D7;
+	background-color: $sidebar_bg;
 	padding: 0px;
 	width: 190px;
 	margin-top: 76px;
-	height: 700px;
+	height: 92%; 
+	color:black;
 	overflow: scroll;
 	position: fixed;
 	z-index: 1;
@@ -73,9 +80,10 @@ $color : #2979D4;
 	img{
 		height: 100px;
     	width: 100px;
-    	@include border(1px,$color)
+    	@include border(1px,$blue)
 		p{
-			font-size: 17px;
+			
+			font-size: 16px;
 			margin-top: 5px;
 			margin-bottom: 10px;
 		}
@@ -89,19 +97,21 @@ $color : #2979D4;
 	text-align: center;
 	color: white;
 	&:hover{
-		background-color: #848484;
-		border-left: 5px solid $color;
+		background-color: $user_items_hover_color;
+		border-left: 5px solid $blue;
 	}
 }
 
 /*========== MAIN ==============*/
 #main{
 	margin-top: 76px;
-	background-color: #FAFAFA;
+	// background-color: #FAFAFA;
 	float: left;
+	padding-left:30px;
 	z-index: 1000;
 	h2{
-		font-size: 18px;
+		
+		font-size: $h2_font_size;
 		color: #6f6f6f;
 		margin-top: 60px;
 		text-align: left;
@@ -113,11 +123,12 @@ $color : #2979D4;
 	padding: 10px;
 	div{
 		height: 195px;
-		background-color: #122E46;
+		background-color: $dark_blue;
 		line-height: 195px;
 	}
 	span{
-		font-size: 16px;
+		
+		font-size: $h2_font_size;
 		color: white;
 	}
 }
@@ -138,7 +149,7 @@ $color : #2979D4;
 
 .search_form{
 	button{
-		font-size: 25px;
+		font-size: $icons_font_size;
 		height: 40px;
 	}
 	input{
@@ -152,10 +163,10 @@ $color : #2979D4;
 }
 
 button.add_avatar{
-	background-color: $color;
+	background-color: $blue;
     color: white;
     height: 40px;
-    @include border(3px,$color);
+    @include border(3px,$blue);
     border-bottom: 3px solid #2161AA;
     font-weight: bold;
     position: relative;
@@ -163,7 +174,7 @@ button.add_avatar{
 }
 .items_header div{
 	height: 30px;
-    background-color: #122E46;
+    background-color: $dark_blue;
     color: white;
 }
 .arrow{
@@ -171,25 +182,26 @@ button.add_avatar{
 	padding: 2px 12px;
 }
 .template{
-	background-color: white;
+	background-color: $content_itemms_bg;
 }
 
 .avatar .image .name {
-    color:$color;
-    font-size: 14px;
+    color:$blue;
+ 
+   font-size:$p_font_size;
     margin-bottom: 3px;
     margin-top: 10px;
     word-wrap: break-word;
 } 
 .date{
-	font-size: 10px;
+	font-size: $p_font_size;
 	position: relative;
     top: -19px;
-    /*left: 39px;*/
     margin-left: 39px;
 }
 .settings{
-	font-size: 30px;
+
+	font-size:$h2_font_size;
 	position: relative;
 	top: -40px !important;
 }
@@ -204,12 +216,12 @@ button.add_avatar{
 
 /*========= FOOTER ===========*/
 footer{
-	margin-left: 210px;
-	background-color: #F8F8F8;
+	// margin-left: 210px;
+	background-color: $footer_bg;
 	&:first-child{
 		color: black !important;
 		font-weight: bold;
-		font-size: 13px;
+		font-size: $p_font_size;
 	}
 
 	&>ul{
@@ -228,7 +240,7 @@ footer{
 /*========== MEDIA ================*/
 @media only screen and (max-width : 768px) {
    #logo{ top: -15px;}
-   .navbar-header{background-color: #122E46;height: 65px;}
+   .navbar-header{background-color: $dark_blue;height: 65px;}
    #sidebar{display: none}
    #user_btn{margin-left: 35px;}
    footer{margin-left: 0px;}
@@ -236,7 +248,8 @@ footer{
 }
 
 @media only screen and (max-width : 992px) {
-   footer{margin-left: 0px;}
+   // footer{margin-left: 0px;}
+   #sidebar{display: none}
 }
 
 
